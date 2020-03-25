@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GeoLeo</string>
+    <string name="inicio">Inicio</string>
+    <string name="museos">Museos</string>
+    <string name="mapa">Mapa</string>
+    <string name="acercade">Acerca de</string>
+</resources>

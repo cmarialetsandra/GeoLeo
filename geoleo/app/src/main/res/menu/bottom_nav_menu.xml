@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_inicio"
+        android:icon="@drawable/ic_inicio"
+        android:title="@string/inicio"/>
+
+    <item
+        android:id="@+id/nav_museos"
+        android:icon="@drawable/ic_museo"
+        android:title="@string/museos"/>
+
+    <item
+        android:id="@+id/nav_mapa"
+        android:icon="@drawable/ic_mapa"
+        android:title="@string/mapa"/>
+
+    <item
+        android:id="@+id/nav_acerca"
+        android:icon="@drawable/ic_acerca"
+        android:title="@string/acercade"/>
+
+</menu>
