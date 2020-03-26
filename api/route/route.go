@@ -11,6 +11,8 @@ func Init() *echo.Echo {
 
 	e.GET("obtenerCoordenadas", controller.ObtenerCoordenadasMuseos)
 	e.GET("obtenerCoordenadasFiltradas", controller.ObtenerCoordenadasMuseosFiltrado)
+	e.GET("obtenerInfoMuseos", controller.ObtenerInformacionMuseos)
+	e.GET("obtenerInfoMuseosFiltrados", controller.ObtenerInformacionMuseosFiltrado)
 
 	return e
 }
