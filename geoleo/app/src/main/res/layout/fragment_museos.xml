@@ -1,17 +1,335 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".Fragments.MuseosFragment">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/museos"
-        android:textSize="30sp"
-        android:textColor="@color/primaryText"
-        android:layout_centerInParent="true"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Fragments.MuseosFragment">
 
-</RelativeLayout>
+        <!--Implementación-->
+        <ImageView
+            android:id="@+id/fig1"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@drawable/fig1"
+            app:layout_constraintLeft_toLeftOf="@id/glDer"
+            app:layout_constraintRight_toRightOf="@id/glDer"
+            app:layout_constraintBottom_toTopOf="@+id/glAF1"
+            app:layout_constraintTop_toTopOf="@+id/glATop"/>
+
+        <ImageView
+            android:id="@+id/fig2"
+            android:layout_height="220dp"
+            android:layout_width="match_parent"
+            android:src="@drawable/fig2"
+            app:layout_constraintLeft_toLeftOf="@id/glDer"
+            app:layout_constraintRight_toRightOf="@id/glDer"
+            app:layout_constraintBottom_toTopOf="@+id/glAF2"
+            app:layout_constraintTop_toTopOf="@+id/glATop"/>
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="match_parent"
+            android:layout_height="132dp"
+            android:src="@drawable/logo2"
+            app:layout_constraintBottom_toTopOf="@+id/glALogo"
+            app:layout_constraintRight_toLeftOf="@id/glILogo"
+            app:layout_constraintLeft_toRightOf="@id/glDLogo"
+            app:layout_constraintTop_toTopOf="@+id/glAbLogo"/>
+
+        <ImageView
+            android:id="@+id/logoBorde"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:src="@drawable/circle"
+            app:layout_constraintBottom_toTopOf="@+id/glALogo"
+            app:layout_constraintRight_toLeftOf="@id/glILogo"
+            app:layout_constraintLeft_toRightOf="@id/glDLogo"
+            app:layout_constraintTop_toTopOf="@+id/glAbLogo"/>
+
+        <ImageView
+            android:id="@+id/cont1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banner4"
+            app:layout_constraintBottom_toTopOf="@+id/glAMuseo"
+            app:layout_constraintLeft_toRightOf="@id/glDMuseo"
+            app:layout_constraintRight_toRightOf="@id/glIMuseo"
+            app:layout_constraintTop_toTopOf="@+id/glAbMus" />
+
+        <ImageView
+            android:id="@+id/cont2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banner4"
+            app:layout_constraintBottom_toTopOf="@+id/glAMu2"
+            app:layout_constraintLeft_toRightOf="@id/glDMuseo"
+            app:layout_constraintRight_toRightOf="@id/glIMuseo"
+            app:layout_constraintTop_toTopOf="@+id/glAbMu2" />
+
+        <ImageView
+            android:id="@+id/cont3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banner4"
+            app:layout_constraintBottom_toTopOf="@+id/glAMu3"
+            app:layout_constraintLeft_toRightOf="@id/glDMuseo"
+            app:layout_constraintRight_toRightOf="@id/glIMuseo"
+            app:layout_constraintTop_toTopOf="@+id/glAbMu3" />
+
+        <ImageView
+            android:id="@+id/cont4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banner4"
+            app:layout_constraintBottom_toTopOf="@+id/glAMu4"
+            app:layout_constraintLeft_toRightOf="@id/glDMuseo"
+            app:layout_constraintRight_toRightOf="@id/glIMuseo"
+            app:layout_constraintTop_toTopOf="@+id/glAbMu4" />
+
+        <ImageView
+            android:id="@+id/cont5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banner4"
+            app:layout_constraintBottom_toTopOf="@+id/glAMu5"
+            app:layout_constraintLeft_toRightOf="@id/glDMuseo"
+            app:layout_constraintRight_toRightOf="@id/glIMuseo"
+            app:layout_constraintTop_toTopOf="@+id/glAbMu5"/>
+
+        <ImageView
+            android:id="@+id/cont6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banner4"
+            app:layout_constraintBottom_toTopOf="@+id/glAMu6"
+            app:layout_constraintLeft_toRightOf="@id/glDMuseo"
+            app:layout_constraintRight_toRightOf="@id/glIMuseo"
+            app:layout_constraintTop_toTopOf="@+id/glAbMu6"/>
+
+        <ImageView
+            android:id="@+id/cont7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banner4"
+            app:layout_constraintBottom_toTopOf="@+id/glAMu7"
+            app:layout_constraintLeft_toRightOf="@id/glDMuseo"
+            app:layout_constraintRight_toRightOf="@id/glIMuseo"
+            app:layout_constraintTop_toTopOf="@+id/glAbMu7" />
+
+        <ImageView
+            android:id="@+id/cont8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/banner4"
+            app:layout_constraintBottom_toTopOf="@+id/glAMu8"
+            app:layout_constraintLeft_toRightOf="@id/glDMuseo"
+            app:layout_constraintRight_toRightOf="@id/glIMuseo"
+            app:layout_constraintTop_toTopOf="@+id/glAbMu8" />
+
+        <!--Líneas Guías Generales (Derecha, Izquierda, Arriba)-->
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glATop"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glDer"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.0001"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glIzq"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="100"/>
+
+        <!--Guía líneas figuras de arriba-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAF1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.20"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAF2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.18" />
+
+        <!--Guías líneas del Logo-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glCLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.50" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAbLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.27"/>
+        0
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glALogo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.12"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glILogo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.30" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glDLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.70"/>
+
+        <!--Línea Guía Lista de Museo General-->
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glDMuseo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glIMuseo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.17"/>
+
+        <!--Línea Guía Lista de Museo #1-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAMuseo"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.33" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAbMus"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.40" />
+
+        <!--Línea Guía Lista de Museo #1-->
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAMu2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.41" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAbMu2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.48"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAMu3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.49" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAbMu3"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.56"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAMu4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.57" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAbMu4"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.64"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAMu5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAbMu5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.72"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAMu6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.73" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAbMu6"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.80"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAMu7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.81" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAbMu7"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.88"/>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAMu8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.89" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/glAbMu8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.96"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
