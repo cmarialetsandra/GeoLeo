@@ -4,4 +4,5 @@
     <string name="museos">Museos</string>
     <string name="mapa">Mapa</string>
     <string name="acercade">Acerca de</string>
+    <string name="internet_failure_error">Internet connection error</string>
 </resources>
