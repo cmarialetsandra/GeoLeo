@@ -1,7 +1,5 @@
 apply plugin: 'com.android.application'
-
 apply plugin: 'kotlin-android'
-
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
 apply plugin: "androidx.navigation.safeargs.kotlin"
@@ -53,7 +51,6 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation Kotlin.kotlin
     implementation AndroidX.appcompat
     implementation AndroidX.androidXcore
@@ -62,9 +59,12 @@ dependencies {
     implementation 'androidx.navigation:navigation-fragment:2.0.0'
     implementation 'androidx.navigation:navigation-ui:2.0.0'
     implementation 'androidx.lifecycle:lifecycle-extensions:2.0.0'
-    implementation 'androidx.navigation:navigation-fragment-ktx:2.0.0'
-    implementation 'androidx.navigation:navigation-ui-ktx:2.0.0'
-
+    implementation Navigation.fragment
+    implementation Navigation.ui
+    testImplementation Koin.test
+    testImplementation TestLibs.junit
+    androidTestImplementation TestLibs.testrunner
+    androidTestImplementation TestLibs.espresso
     implementation AndroidX.annotations
     implementation AndroidX.swipeRefresh
     implementation Retrofit.retrofit
@@ -93,17 +93,6 @@ dependencies {
     implementation Coroutines.coroutineAdapter
     implementation GoogleLibs.gson
     implementation GoogleLibs.material
-    implementation Navigation.materialDrawer
-    implementation Navigation.materialDrawerNavigation
     implementation Navigation.runtime
-    implementation Navigation.fragment
-    implementation Navigation.ui
     implementation Libs.skeleton
-    testImplementation Koin.test
-    testImplementation TestLibs.junit
-    androidTestImplementation TestLibs.testrunner
-    androidTestImplementation TestLibs.espresso
-    implementation 'com.android.support:design:29.0.0'
-    implementation 'androidx.cardview:cardview:1.0.0'
-    implementation 'androidx.recyclerview:recyclerview:1.1.0-beta02'
 }

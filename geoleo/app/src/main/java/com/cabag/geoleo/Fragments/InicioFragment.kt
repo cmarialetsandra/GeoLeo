@@ -10,7 +10,6 @@ import androidx.lifecycle.Observer
 import com.cabag.geoleo.ui.viewModels.MuseoViewModel
 import org.koin.androidx.viewmodel.ext.android.viewModel
 
-
 import com.cabag.geoleo.R
 import kotlinx.android.synthetic.main.fragment_inicio.*
 
