@@ -2,12 +2,17 @@ package com.cabag.geoleo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.cabag.geoleo.CardView.recyclerViewAdapter
+import com.cabag.geoleo.CardView.userDataModel
 import com.cabag.geoleo.Fragments.AcercaDeFragment
 import com.cabag.geoleo.Fragments.InicioFragment
 import com.cabag.geoleo.Fragments.MapaFragment
 import com.cabag.geoleo.Fragments.MuseosFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.fragment_museos.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -66,4 +71,6 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
+
 }
