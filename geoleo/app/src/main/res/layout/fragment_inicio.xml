@@ -2,16 +2,17 @@
 <RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="wrap_content"
+    android:layout_height="400dp"
     tools:context=".Fragments.InicioFragment">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/image_view"
+        android:scaleType="centerCrop"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/inicio"
-        android:textSize="30sp"
-        android:textColor="@color/primaryText"
-        android:layout_centerInParent="true"/>
+
+
 
 </RelativeLayout>
+

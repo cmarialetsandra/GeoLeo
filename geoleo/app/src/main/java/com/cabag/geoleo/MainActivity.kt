@@ -2,22 +2,24 @@ package com.cabag.geoleo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.cabag.geoleo.Fragments.AcercaDeFragment
-import com.cabag.geoleo.Fragments.InicioFragment
-import com.cabag.geoleo.Fragments.MapaFragment
-import com.cabag.geoleo.Fragments.MuseosFragment
+import android.view.View
+import androidx.viewpager.widget.ViewPager
+import com.cabag.geoleo.Fragments.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
     val manager = supportFragmentManager
+    internal lateinit var viewPager : ViewPager
 
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.AppTheme)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
+        viewPager = findViewById<View>(R.id.viewPager) as ViewPager
+        val adapter = ViewPageAdapter(this)
+        viewPager.adapter = adapter
         replaceFragment(1)
         navigation.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
     }
@@ -26,10 +28,14 @@ class MainActivity : AppCompatActivity() {
             item ->
         when(item.itemId){
             R.id.nav_inicio->{
+                viewPager = findViewById<View>(R.id.viewPager) as ViewPager
+                val adapter = ViewPageAdapter(this)
+                viewPager.adapter = adapter
                 replaceFragment(1)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.nav_museos->{
+                viewPager.adapter = null
                 replaceFragment(2)
                 return@OnNavigationItemSelectedListener true
             }
