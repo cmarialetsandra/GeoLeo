@@ -1,17 +1,146 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/fgMuseos"
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Fragments.MuseosFragment">
+    tools:context="Fragments.MuseosFragment"
+    android:background="@color/blanco">
 
-    <TextView
+<!--Implementación-->
+<ImageView
+    android:id="@+id/fig1"
+    android:layout_width="match_parent"
+    android:layout_height="220dp"
+    android:src="@drawable/fig1"
+    app:layout_constraintLeft_toLeftOf="@id/glDer"
+    app:layout_constraintRight_toRightOf="@id/glDer"
+    app:layout_constraintBottom_toTopOf="@+id/glAF1"
+    app:layout_constraintTop_toTopOf="@+id/glATop"/>
+
+<ImageView
+    android:id="@+id/fig2"
+    android:layout_height="220dp"
+    android:layout_width="match_parent"
+    android:src="@drawable/fig2"
+    app:layout_constraintLeft_toLeftOf="@id/glDer"
+    app:layout_constraintRight_toRightOf="@id/glDer"
+    app:layout_constraintBottom_toTopOf="@+id/glAF2"
+    app:layout_constraintTop_toTopOf="@+id/glATop"/>
+
+<ImageView
+    android:id="@+id/logo"
+    android:layout_width="match_parent"
+    android:layout_height="132dp"
+    android:src="@drawable/logo2"
+    app:layout_constraintTop_toTopOf="@+id/glALogo"
+    app:layout_constraintRight_toLeftOf="@id/glILogo"
+    app:layout_constraintLeft_toRightOf="@id/glDLogo"
+    app:layout_constraintBottom_toBottomOf="@+id/glAbLogo"/>
+
+<ImageView
+    android:id="@+id/logoBorde"
+    android:layout_width="match_parent"
+    android:layout_height="132dp"
+    android:src="@drawable/circle"
+    app:layout_constraintBottom_toTopOf="@+id/glALogo"
+    app:layout_constraintRight_toLeftOf="@id/glILogo"
+    app:layout_constraintLeft_toRightOf="@id/glDLogo"
+    app:layout_constraintTop_toTopOf="@+id/glAbLogo"/>
+
+<!--Líneas Guías Generales (Derecha, Izquierda, Arriba)-->
+
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/glATop"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0"/>
+
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/glDer"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.0001"/>
+
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/glIzq"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="100"/>
+
+<!--Guía líneas figuras de arriba-->
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/glAF1"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.20"/>
+
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/glAF2"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.18" />
+
+<!--Guías líneas del Logo-->
+
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/glAbLogo"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.20"/>
+
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/glALogo"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    app:layout_constraintGuide_percent="0.25"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glListaA"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/museos"
-        android:textSize="30sp"
-        android:textColor="@color/primaryText"
-        android:layout_centerInParent="true"/>
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37"/>
 
-</RelativeLayout>
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/glILogo"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.30" />
+
+<androidx.constraintlayout.widget.Guideline
+    android:id="@+id/glDLogo"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_constraintGuide_percent="0.70"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glListaAb"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.90"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewMenu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/glListaAb"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/glListaA" />
+</androidx.constraintlayout.widget.ConstraintLayout>

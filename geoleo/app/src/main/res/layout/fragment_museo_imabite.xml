@@ -1,0 +1,570 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/blanco"
+    tools:context=".Fragments.Museo_imabite">
+
+    <ImageView
+        android:id="@+id/fig1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:src="@drawable/museoimabite3"
+        app:layout_constraintBottom_toBottomOf="@+id/glAbFoto"
+        app:layout_constraintLeft_toLeftOf="@id/glIzqFoto"
+        app:layout_constraintRight_toRightOf="@id/glDerFoto"
+        app:layout_constraintTop_toTopOf="@+id/glAFoto" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:src="@drawable/logo2"
+        app:layout_constraintBottom_toTopOf="@id/glAbLogo"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintLeft_toLeftOf="@id/glIzqLogo"
+        app:layout_constraintRight_toRightOf="@id/glDerLogo"
+        app:layout_constraintTop_toTopOf="@+id/glALogo"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/contenedor"
+        android:src="@drawable/forma_imagen"
+        app:layout_constraintBottom_toBottomOf="@+id/glAbContenedor"
+        app:layout_constraintLeft_toLeftOf="@id/glIzqContenedor"
+        app:layout_constraintRight_toRightOf="@id/glDerContenedor"
+        app:layout_constraintTop_toTopOf="@+id/glAContenedor"/>
+
+    <TextView
+        android:id="@+id/lblTitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/nmImabite"
+        app:layout_constraintLeft_toLeftOf="@id/glIzqLogo"
+        app:layout_constraintTop_toTopOf="@id/glATitulo"
+        app:layout_constraintBottom_toBottomOf="@id/glAbTitulo"
+        app:layout_constraintRight_toRightOf="@+id/glDerLogo"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:id="@+id/lblAnioFund"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblAnioFund"
+        app:layout_constraintLeft_toLeftOf="@id/glIzqTitulos"
+        app:layout_constraintBottom_toBottomOf="@id/l"
+        app:layout_constraintTop_toTopOf="@id/glATitulos"
+        app:layout_constraintRight_toRightOf="@+id/glDerTitulos"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/lblAnioFundInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblMIAnioFund"
+        app:layout_constraintLeft_toLeftOf="@id/glDerTitulos"
+        app:layout_constraintBottom_toBottomOf="@id/l"
+        app:layout_constraintTop_toTopOf="@id/glATitulos"
+        app:layout_constraintRight_toRightOf="@+id/glDerInfo"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/lightPrimary"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/lblFundador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblFundador"
+        app:layout_constraintLeft_toLeftOf="@id/glIzqTitulos"
+        app:layout_constraintTop_toTopOf="@id/l"
+        app:layout_constraintBottom_toBottomOf="@id/glAbFundador"
+        app:layout_constraintRight_toRightOf="@+id/glDerTitulos"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/lblFundadorInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblMIFundador"
+        app:layout_constraintLeft_toLeftOf="@id/glDerTitulos"
+        app:layout_constraintTop_toTopOf="@id/l"
+        app:layout_constraintBottom_toBottomOf="@id/glAbFundador"
+        app:layout_constraintRight_toRightOf="@+id/glDerInfo"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/lightPrimary"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/lblAdministrador"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblAdmin"
+        app:layout_constraintLeft_toLeftOf="@id/glIzqTitulos"
+        app:layout_constraintTop_toTopOf="@id/glAbFundador"
+        app:layout_constraintBottom_toBottomOf="@id/glAbAdministrador"
+        app:layout_constraintRight_toRightOf="@+id/glDerTitulos"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/lblAdministradorInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblMIAdmin"
+        app:layout_constraintLeft_toLeftOf="@id/glDerTitulos"
+        app:layout_constraintTop_toTopOf="@id/glAbFundador"
+        app:layout_constraintBottom_toBottomOf="@id/glAbAdministrador"
+        app:layout_constraintRight_toRightOf="@+id/glDerInfo"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/lightPrimary"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/lblPrecio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblPrecio"
+        app:layout_constraintLeft_toLeftOf="@id/glIzqTitulos"
+        app:layout_constraintTop_toTopOf="@id/glAbAdministrador"
+        app:layout_constraintBottom_toBottomOf="@id/glAPrecio"
+        app:layout_constraintRight_toRightOf="@+id/glDerTitulos"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/lblPrecioInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblMIPrecio"
+        app:layout_constraintLeft_toLeftOf="@id/glDerTitulos"
+        app:layout_constraintTop_toTopOf="@id/glAbAdministrador"
+        app:layout_constraintBottom_toBottomOf="@id/glAPrecio"
+        app:layout_constraintRight_toRightOf="@+id/glDerInfo"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/lightPrimary"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/lblServicios"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblServicios"
+        app:layout_constraintLeft_toLeftOf="@id/glIzqTitulos"
+        app:layout_constraintTop_toTopOf="@id/glAPrecio"
+        app:layout_constraintBottom_toBottomOf="@id/glAbServicios"
+        app:layout_constraintRight_toRightOf="@+id/glDerTitulos"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/lblServiciosInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblMIServicios"
+        app:layout_constraintLeft_toLeftOf="@id/glDerTitulos"
+        app:layout_constraintTop_toTopOf="@id/glAPrecio"
+        app:layout_constraintBottom_toBottomOf="@id/glAbServicios"
+        app:layout_constraintRight_toRightOf="@+id/glDerInfo"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/lightPrimary"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/lblHorario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblHorario"
+        app:layout_constraintLeft_toLeftOf="@id/glIzqTitulos"
+        app:layout_constraintTop_toTopOf="@id/glAbHorario"
+        app:layout_constraintBottom_toBottomOf="@id/glAbServicios"
+        app:layout_constraintRight_toRightOf="@+id/glDerTitulos"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/lblHorarioInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblMIHorario"
+        app:layout_constraintLeft_toLeftOf="@id/glDerTitulos"
+        app:layout_constraintTop_toTopOf="@id/glAbHorario"
+        app:layout_constraintBottom_toBottomOf="@id/glAbServicios"
+        app:layout_constraintRight_toRightOf="@+id/glDerInfo"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/lightPrimary"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/lblTematica"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblTematica"
+        app:layout_constraintLeft_toLeftOf="@id/glIzqTitulos"
+        app:layout_constraintTop_toTopOf="@id/glAbHorario"
+        app:layout_constraintBottom_toBottomOf="@id/glAbTematica"
+        app:layout_constraintRight_toRightOf="@+id/glDerTitulos"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/lblTematicaInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblMITematica"
+        app:layout_constraintLeft_toLeftOf="@id/glDerTitulos"
+        app:layout_constraintTop_toTopOf="@id/glAbHorario"
+        app:layout_constraintBottom_toBottomOf="@id/glAbTematica"
+        app:layout_constraintRight_toRightOf="@+id/glDerInfo"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/lightPrimary"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/lblActividades"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblActividades"
+        app:layout_constraintLeft_toLeftOf="@id/glIzqTitulos"
+        app:layout_constraintTop_toTopOf="@id/glAbTematica"
+        app:layout_constraintBottom_toBottomOf="@id/glAbActividades"
+        app:layout_constraintRight_toRightOf="@+id/glDerTitulos"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/lblActividadesInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblMIActividades"
+        app:layout_constraintLeft_toLeftOf="@id/glDerTitulos"
+        app:layout_constraintTop_toTopOf="@id/glAbTematica"
+        app:layout_constraintBottom_toBottomOf="@id/glAbActividades"
+        app:layout_constraintRight_toRightOf="@+id/glDerInfo"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/lightPrimary"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/lblTelefono"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblTelefono"
+        app:layout_constraintLeft_toLeftOf="@id/glIzqTitulos"
+        app:layout_constraintTop_toTopOf="@id/glAbActividades"
+        app:layout_constraintBottom_toBottomOf="@id/glAbTelefono"
+        app:layout_constraintRight_toRightOf="@+id/glDerTitulos"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/lblTelefonoInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblMITelefono"
+        app:layout_constraintLeft_toLeftOf="@id/glDerTitulos"
+        app:layout_constraintTop_toTopOf="@id/glAbActividades"
+        app:layout_constraintBottom_toBottomOf="@id/glAbTelefono"
+        app:layout_constraintRight_toRightOf="@+id/glDerInfo"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/lightPrimary"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/lblDireccion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblDireccion"
+        app:layout_constraintLeft_toLeftOf="@id/glIzqTitulos"
+        app:layout_constraintTop_toTopOf="@id/glAbTelefono"
+        app:layout_constraintBottom_toBottomOf="@id/glAbDireccion"
+        app:layout_constraintRight_toRightOf="@+id/glDerTitulos"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/blanco"
+        android:textSize="15dp"/>
+
+    <TextView
+        android:id="@+id/lblDireccionInfo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/lblMIDireccion"
+        app:layout_constraintLeft_toLeftOf="@id/glDerTitulos"
+        app:layout_constraintTop_toTopOf="@id/glAbTelefono"
+        app:layout_constraintBottom_toBottomOf="@id/glAbDireccion"
+        app:layout_constraintRight_toRightOf="@+id/glDerInfo"
+        android:textAlignment="textStart"
+        android:textStyle="bold"
+        android:textColor="@color/lightPrimary"
+        android:textSize="12dp"/>
+    <!--Guías líneas de imag de arriba-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glIzqFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glDerFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="1"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAbFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.26"/>
+
+    <!--Fin Guías líneas de imag de arriba-->
+
+    <!--Guías líneas Logo-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glALogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAbLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glCentroLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glDerLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.85"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glIzqLogo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.15"/>
+    <!--Fin Guías líneas Logo-->
+
+    <!--Guías líneas del Contenedor-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glIzqContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.20"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glDerContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAbContenedor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.89"/>
+
+    <!--Fin de Guías líneas del Contenedor-->
+
+    <!--Guías líneas del Nombre del Museo-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glATitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.21"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAbTitulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30"/>
+    <!--Fin de Guías líneas del Nombre del Museo-->
+
+    <!--Guías líneas de los títulos-->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glIzqTitulos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.08"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glDerTitulos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glATitulos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.32"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAbTitulos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.87"/>
+
+    <!--Fin Guías líneas de los títulos-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAbAnioFunda"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.37" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAbFundador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.44"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAbAdministrador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.50"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.57"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAbServicios"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.62"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAbHorario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.67"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAbTematica"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.72"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAbActividades"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.77"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAbTelefono"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.80"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glAbDireccion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.86"/>
+
+    <!--Guías líneas de la Información-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glDerInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93"/>
+
+    <!--Fin de Guías líneas de la Información-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
