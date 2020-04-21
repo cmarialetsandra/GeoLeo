@@ -9,4 +9,6 @@
     <color name="negro">#000000</color>
     <color name="blanco">#FFFFFF</color>
     <color name="azulOscuro">#607D8B</color>
+    <color name="gris1">#E0E0E0</color>
+    <color name="gris2">#424242</color>
 </resources>

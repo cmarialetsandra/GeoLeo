@@ -63,7 +63,6 @@ class Museo_imabite : Fragment() {
             if(position=="1"){
                 fig1.setImageResource(foto1)
                 //Aquí ya está todo
-
             }else if(position=="2"){
                 fig1.setImageResource(foto2)
                 lblTitulo.text = "Museo de Arte Sacro"

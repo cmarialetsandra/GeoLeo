@@ -11,7 +11,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.cabag.geoleo.CardView.RecyclerViewAdapter
 import com.cabag.geoleo.CardView.UserDataModel
 
-
 import com.cabag.geoleo.R
 
 class MuseosFragment : Fragment() {
@@ -48,9 +47,9 @@ class MuseosFragment : Fragment() {
         user.add(UserDataModel("Sitio histórico Ruinas León Viejo", R.drawable.sitiohistorico))
 
         recyclerViewAdapter = RecyclerViewAdapter(user)
+
         recyclerViewAdapter.sharedFragmentCALL(fragmentManager!!)
         recyclerView.adapter = recyclerViewAdapter
-
     }
 
 }

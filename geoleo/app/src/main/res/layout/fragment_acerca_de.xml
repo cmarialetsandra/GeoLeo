@@ -178,4 +178,3 @@ tools:context=".Fragments.AcercaDeFragment">
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
-
