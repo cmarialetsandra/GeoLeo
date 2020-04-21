@@ -6,7 +6,14 @@
     <color name="primaryText">#212121</color>
     <color name="secondaryText">#757575</color>
     <color name="lightPrimary">#CFD8DC</color>
+<<<<<<< HEAD
     <color name="negro">#000000</color>
     <color name="blanco">#FFFFFF</color>
     <color name="azulOscuro">#607D8B</color>
+=======
+    <color name="azulOscuro">#607D8B</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="gris1">#E0E0E0</color>
+    <color name="gris2">#424242</color>
+>>>>>>> 66f8c2b41f0c02ddf74b4ba9583503c480e403f7
 </resources>

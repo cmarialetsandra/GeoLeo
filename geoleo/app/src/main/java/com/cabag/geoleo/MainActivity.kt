@@ -3,6 +3,13 @@ package com.cabag.geoleo
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+<<<<<<< HEAD
+=======
+import android.view.View
+import android.widget.ImageView
+import android.widget.ViewFlipper
+import androidx.viewpager.widget.ViewPager
+>>>>>>> 66f8c2b41f0c02ddf74b4ba9583503c480e403f7
 import com.cabag.geoleo.Fragments.*
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import kotlinx.android.synthetic.main.activity_main.*
@@ -13,30 +20,86 @@ class MainActivity : AppCompatActivity(), Museo_imabite.OnFragmentInteractionLis
     }
 
     val manager = supportFragmentManager
+<<<<<<< HEAD
+=======
+    //internal lateinit var viewPager : ViewPager
+   lateinit var viewflipper: ViewFlipper
+   var image = intArrayOf(R.drawable.catedral, R.drawable.iglesia, R.drawable.leon)
+
+>>>>>>> 66f8c2b41f0c02ddf74b4ba9583503c480e403f7
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.AppTheme)
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+<<<<<<< HEAD
+=======
+        viewflipper = findViewById(R.id.v_flipper)
+
+
+        for (i in 0 until image.size){
+            flip_image(image[i])
+        }
+
+        /*viewPager = findViewById<View>(R.id.viewPager) as ViewPager
+        val adapter = ViewPageAdapter(this)
+        viewPager.adapter = adapter*/
+>>>>>>> 66f8c2b41f0c02ddf74b4ba9583503c480e403f7
         replaceFragment(1)
         navigation.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
+    }
+
+   fun flip_image(i : Int){
+        val view = ImageView(this)
+        view.setBackgroundResource(i)
+        viewflipper.addView(view)
+        viewflipper.setFlipInterval(3000)
+        viewflipper.setAutoStart(true)
+        viewflipper.setInAnimation(this, android.R.anim.slide_in_left)
+        viewflipper.setOutAnimation(this, android.R.anim.slide_out_right)
+
     }
 
     private val onNavigationItemSelectedListener = BottomNavigationView.OnNavigationItemSelectedListener {
             item ->
         when(item.itemId){
             R.id.nav_inicio->{
+                viewflipper = findViewById(R.id.v_flipper)
+
+
+                for (i in 0 until image.size){
+                    flip_image(image[i])
+                }
+
+                /*fun flip_image(i : Int){
+                    val view = ImageView(this)
+                    view.setBackgroundResource(i)
+                    viewflipper.addView(view)
+                    viewflipper.setFlipInterval(3000)
+                    viewflipper.setAutoStart(true)
+                    viewflipper.setInAnimation(this, android.R.anim.slide_in_left)
+                    viewflipper.setOutAnimation(this, android.R.anim.slide_out_right)
+
+                }*/
                 replaceFragment(1)
                 return@OnNavigationItemSelectedListener true
+               /* viewPager = findViewById<View>(R.id.viewPager) as ViewPager
+                val adapter = ViewPageAdapter(this)
+                viewPager.adapter = adapter*/
+
             }
             R.id.nav_museos->{
+                viewflipper.removeAllViewsInLayout()
+               // viewPager.adapter = null
                 replaceFragment(2)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.nav_mapa->{
+                viewflipper.removeAllViewsInLayout()
                 replaceFragment(3)
                 return@OnNavigationItemSelectedListener true
             }
             R.id.nav_acerca->{
+                viewflipper.removeAllViewsInLayout()
                 replaceFragment(4)
                 return@OnNavigationItemSelectedListener true
             }
