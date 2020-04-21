@@ -7,11 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <androidx.viewpager.widget.ViewPager
+    <ViewFlipper
+        android:id="@+id/v_flipper"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/viewPager"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="200dp"
+        tools:ignore="InvalidId,MissingConstraints" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"

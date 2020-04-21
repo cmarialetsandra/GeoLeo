@@ -6,19 +6,27 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.AdapterViewFlipper
 import android.widget.ImageView
+import android.widget.ViewFlipper
 import androidx.viewpager.widget.PagerAdapter
 import androidx.viewpager.widget.ViewPager
 import com.cabag.geoleo.R
 
 class InicioFragment : Fragment() {
 
+
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
+
         return inflater.inflate(R.layout.fragment_inicio, container, false)
     }
+
+
+
+
 }
 
-class ViewPageAdapter (private val context : Context) : PagerAdapter() {
+/*class ViewPageAdapter (private val context : Context) : PagerAdapter() {
 
     private var layoutInflater:LayoutInflater?=null
     private val images = arrayOf(R.drawable.catedral,R.drawable.leon2,R.drawable.leon3 )
@@ -48,4 +56,4 @@ class ViewPageAdapter (private val context : Context) : PagerAdapter() {
         vp.removeView(v)
     }
 
-}
+}*/
