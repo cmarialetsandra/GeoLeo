@@ -44,6 +44,7 @@ class Museo_imabite : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         var position = ""
+        var foto1 = R.drawable.museoimabite3
         var foto2 = R.drawable.museoartesacro2
         var foto3 = R.drawable.museoadiact
         var foto4 = R.drawable.museorubendario2
@@ -60,6 +61,7 @@ class Museo_imabite : Fragment() {
 
 
             if(position=="1"){
+                fig1.setImageResource(foto1)
                 //Aquí ya está todo
 
             }else if(position=="2"){
