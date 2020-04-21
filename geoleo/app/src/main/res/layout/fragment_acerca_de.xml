@@ -1,34 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<androidx.constraintlayout.widget.ConstraintLayout
-=======
 <ScrollView
->>>>>>> a5ecd5e99bdbda56593b7540ce4f7bfffc32a09b
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
-    android:background="@color/blanco"
-    tools:context=".Fragments.AcercaDeFragment">
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".Fragments.AcercaDeFragment">
 
-<<<<<<< HEAD
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/acercade"
-        android:textSize="30sp"
-        android:textColor="@color/primaryText"
-        android:layout_centerInParent="true"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"/>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
-=======
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -200,7 +178,3 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>
-
-
->>>>>>> a5ecd5e99bdbda56593b7540ce4f7bfffc32a09b
-
