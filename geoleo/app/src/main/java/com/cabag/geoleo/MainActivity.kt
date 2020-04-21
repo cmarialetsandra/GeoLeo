@@ -17,10 +17,8 @@ class MainActivity : AppCompatActivity(), Museo_imabite.OnFragmentInteractionLis
     }
 
     val manager = supportFragmentManager
-
-    //internal lateinit var viewPager : ViewPager
-   lateinit var viewflipper: ViewFlipper
-   var image = intArrayOf(R.drawable.catedral, R.drawable.iglesia, R.drawable.leon)
+    lateinit var viewflipper: ViewFlipper
+    var image = intArrayOf(R.drawable.catedral, R.drawable.iglesia, R.drawable.leon)
 
     override fun onCreate(savedInstanceState: Bundle?) {
         setTheme(R.style.AppTheme)
@@ -29,20 +27,15 @@ class MainActivity : AppCompatActivity(), Museo_imabite.OnFragmentInteractionLis
 
         viewflipper = findViewById(R.id.v_flipper)
 
-
         for (i in 0 until image.size){
             flip_image(image[i])
         }
-
-        /*viewPager = findViewById<View>(R.id.viewPager) as ViewPager
-        val adapter = ViewPageAdapter(this)
-        viewPager.adapter = adapter*/
 
         replaceFragment(1)
         navigation.setOnNavigationItemSelectedListener(onNavigationItemSelectedListener)
     }
 
-   fun flip_image(i : Int){
+    fun flip_image(i : Int){
         val view = ImageView(this)
         view.setBackgroundResource(i)
         viewflipper.addView(view)
@@ -59,31 +52,15 @@ class MainActivity : AppCompatActivity(), Museo_imabite.OnFragmentInteractionLis
             R.id.nav_inicio->{
                 viewflipper = findViewById(R.id.v_flipper)
 
-
                 for (i in 0 until image.size){
                     flip_image(image[i])
                 }
 
-                /*fun flip_image(i : Int){
-                    val view = ImageView(this)
-                    view.setBackgroundResource(i)
-                    viewflipper.addView(view)
-                    viewflipper.setFlipInterval(3000)
-                    viewflipper.setAutoStart(true)
-                    viewflipper.setInAnimation(this, android.R.anim.slide_in_left)
-                    viewflipper.setOutAnimation(this, android.R.anim.slide_out_right)
-
-                }*/
                 replaceFragment(1)
                 return@OnNavigationItemSelectedListener true
-               /* viewPager = findViewById<View>(R.id.viewPager) as ViewPager
-                val adapter = ViewPageAdapter(this)
-                viewPager.adapter = adapter*/
-
             }
             R.id.nav_museos->{
                 viewflipper.removeAllViewsInLayout()
-               // viewPager.adapter = null
                 replaceFragment(2)
                 return@OnNavigationItemSelectedListener true
             }

@@ -121,6 +121,7 @@
         android:orientation="vertical"
         app:layout_constraintGuide_percent="0.93" />
 
-    <!--Fin de Guías líneas de la Información-->
+    <!--Fin de Guías líneas de la Información, qué titulo vas a poner???-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

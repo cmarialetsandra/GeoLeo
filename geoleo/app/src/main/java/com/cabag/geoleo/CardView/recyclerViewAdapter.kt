@@ -7,7 +7,6 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentTransaction
@@ -16,8 +15,8 @@ import com.cabag.geoleo.Fragments.Museo_imabite
 import com.cabag.geoleo.Interfaces.IRecyclerClick
 import com.cabag.geoleo.R
 
-class recyclerViewAdapter (val userList: ArrayList<userDataModel>) :
-    RecyclerView.Adapter<recyclerViewAdapter.ViewHolder>(){
+class RecyclerViewAdapter (val userList: ArrayList<UserDataModel>) :
+    RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder>(){
 
     lateinit var context: Context
     lateinit var fragmentManager: FragmentManager
@@ -42,7 +41,7 @@ class recyclerViewAdapter (val userList: ArrayList<userDataModel>) :
     }
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-        var user:userDataModel = userList[position]
+        var user:UserDataModel = userList[position]
         holder.title.text  = user.title
         holder.iv.setImageResource(userList[position].imagen)
 
@@ -58,7 +57,7 @@ class recyclerViewAdapter (val userList: ArrayList<userDataModel>) :
                 museoImabite.sendFragmentCall(fragmentShareFragment)
                 fragmentTransaction.replace(R.id.fragmentF,museoImabite).addToBackStack("tagMuseoDetail")
                 fragmentTransaction.commit()
-               // Toast.makeText(context,"Fila: #$position", Toast.LENGTH_SHORT).show()
+                // Toast.makeText(context,"Fila: #$position", Toast.LENGTH_SHORT).show()
             }
         })
     }
@@ -81,8 +80,5 @@ class recyclerViewAdapter (val userList: ArrayList<userDataModel>) :
             itemView.setOnClickListener(this)
         }
     }
-
-
-
 
 }

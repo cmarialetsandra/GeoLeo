@@ -36,18 +36,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="@+id/navigation"/>
 
-
-
-    <!--
-
-        <FrameLayout
-            android:id="@+id/fragmentF"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toBottomOf="@+id/navigation"/>
-    -->
 </androidx.constraintlayout.widget.ConstraintLayout>
