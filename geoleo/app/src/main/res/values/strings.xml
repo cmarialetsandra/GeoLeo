@@ -5,6 +5,7 @@
     <string name="mapa">Mapa</string>
     <string name="acercade">Acerca de</string>
     <string name="title_activity_maps">Map</string>
+<<<<<<< HEAD
 
     <string name="nmImabite">Museo de Arte Indígena Imabite</string>
     <string name="nmSacro">Museo de arte sacro, Monseñor César Bosco Vivas Robelo</string>
@@ -140,4 +141,10 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+=======
+    <string name="contenido_acercade">
+        GeoLeo (Geo = sílaba tomada de la palabra georreferenciación, y Leo = abreviación de León) nace de la iniciativa de un grupo de estudiantes de la carrera de Ingeniería en Sistemas de Información de la Universidad Centroamericana, que deseaban crear una aplicación que brinde información de los museos de uno de los departamentos más importantes de Nicaragua, León.
+Esta aplicación tiene por objetivo promover el turismo nacional mostrando los puntos más atractivos del turismo departamental, proporcionando una herramienta que muestra los datos referentes a la ubicación, precios, servicios, entre otros.
+    </string>
+>>>>>>> a5ecd5e99bdbda56593b7540ce4f7bfffc32a09b
 </resources>

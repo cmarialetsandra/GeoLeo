@@ -40,6 +40,7 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+<<<<<<< HEAD
 
     implementation 'de.hdodenhof:circleimageview:2.2.0'
 
@@ -47,4 +48,9 @@ dependencies {
     implementation 'androidx.recyclerview:recyclerview:1.1.0-beta02'
 
 
+=======
+    implementation 'com.android.support:design:29.0.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'me.biubiubiu.justifytext:library:1.1'
+>>>>>>> a5ecd5e99bdbda56593b7540ce4f7bfffc32a09b
 }
