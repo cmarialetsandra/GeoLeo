@@ -6,4 +6,9 @@
     <string name="acercade">Acerca de</string>
     <string name="nmImabite">Museo de Arte Indígena Imabite</string>
     <string name="infoInicio">Desde 1610 León es una de las principales ciudades coloniales de Nicaragua junto con costumbres y tradiciones que son parte de la identidad nacional, así como una rica y variada historia y cultura que da origen a nuestra forma de ser. Esta aplicación es un recorrido por los distintos museos que este departamento hospeda.</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="contenido_acercade">
+        GeoLeo (Geo = sílaba tomada de la palabra georreferenciación, y Leo = abreviación de León) nace de la iniciativa de un grupo de estudiantes de la carrera de Ingeniería en Sistemas de Información de la Universidad Centroamericana, que deseaban crear una aplicación que brinde información de los museos de uno de los departamentos más importantes de Nicaragua, León.
+Esta aplicación tiene por objetivo promover el turismo nacional mostrando los puntos más atractivos del turismo departamental, proporcionando una herramienta que muestra los datos referentes a la ubicación, precios, servicios, entre otros.
+    </string>
 </resources>
