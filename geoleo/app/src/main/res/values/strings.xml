@@ -9,4 +9,137 @@
         GeoLeo (Geo = sílaba tomada de la palabra georreferenciación, y Leo = abreviación de León) nace de la iniciativa de un grupo de estudiantes de la carrera de Ingeniería en Sistemas de Información de la Universidad Centroamericana, que deseaban crear una aplicación que brinde información de los museos de uno de los departamentos más importantes de Nicaragua, León.
 Esta aplicación tiene por objetivo promover el turismo nacional mostrando los puntos más atractivos del turismo departamental, proporcionando una herramienta que muestra los datos referentes a la ubicación, precios, servicios, entre otros.
     </string>
+    <string name="nmImabite">Museo de Arte Indígena Imabite</string>
+    <string name="nmSacro">Museo de arte sacro, Monseñor César Bosco Vivas Robelo</string>
+    <string name="nmAdiact">Museo Adiact</string>
+    <string name="nmArchivo">Museo Archivo Rubén Darío</string>
+    <string name="nmEntomologico">Museo Entomológico de León</string>
+    <string name="nmLeyendas">Museo de Leyendas y Tradiciones “Coronel Joaquín de Arrechavala”</string>
+    <string name="nmGenizaro">Museo Genízaro y cte. Silvio Mayorga</string>
+    <string name="nmHistorico">Museo Histórico Héroes y Mártires de Veracruz</string>
+    <string name="nmCentro">Centro de Arte Fund. Ortíz Gurdián</string>
+
+    <!--Etiquetas globales para los museos-->
+    <string name="lblAnioFund">Año de Fundación: </string>
+    <string name="lblFundador">Fundador: </string>
+    <string name="lblAdmin">Administrador: </string>
+    <string name="lblPrecio">Precio: </string>
+    <string name="lblServicios">Servicios: </string>
+    <string name="lblHorario">Horario de Visita: </string>
+    <string name="lblTematica">Temática: </string>
+    <string name="lblActividades">Actividades: </string>
+    <string name="lblTelefono">Teléfono: </string>
+    <string name="lblDireccion">Dirección: </string>
+
+    <!--Etiquetas para Museo Imabite-->
+    <string name="lblMIAnioFund">13 de agosto 1998</string>
+    <string name="lblMIFundador">Instituto Nicaragüense de Cultura</string>
+    <string name="lblMIAdmin">Instituto Nicaragüense de Cultura</string>
+    <string name="lblMIPrecio">Ext. U$5, Nal. C$ 50, Br. C$25 y Est. C$10</string>
+    <string name="lblMIServicios">Tours precolombino colonial a Ext. y Nal.</string>
+    <string name="lblMIHorario">M-V 8:00 a.m - 5:00 p.m. y S-D 9:00 a.m. - 4:00p.m.</string>
+    <string name="lblMITematica">Historia predominante</string>
+    <string name="lblMIActividades">No hay información para ésta área. </string>
+    <string name="lblMITelefono">N/H </string>
+    <string name="lblMIDireccion">Ruinas de León Viejo. </string>
+
+    <!--Etiquetas para Museo Arte Sacro-->
+    <string name="lblMASAnioFund">2001</string>
+    <string name="lblMASFundador">Monseñor Ricardo Clemente Juárez</string>
+    <string name="lblMASAdmin">Luis Manuel Somarriba</string>
+    <string name="lblMASPrecio">No hay información para esta área. </string>
+    <string name="lblMASServicios">No hay información para esta área. </string>
+    <string name="lblMASHorario">No hay información para esta área. </string>
+    <string name="lblMASTematica">Sacro</string>
+    <string name="lblMASActividades">No hay información para esta área. </string>
+    <string name="lblMASTelefono">(+505) 23116866</string>
+    <string name="lblMASDireccion">Costado Suroeste de la Igl. San Juan Bautista de Sutiava, Casa Coral</string>
+
+    <!--Etiquetas para Museo Adiact-->
+    <string name="lblMAAnioFund">1980</string>
+    <string name="lblMAFundador">Enrique de la Concepción Fonseca</string>
+    <string name="lblMAAdmin">No hay información para esta área. </string>
+    <string name="lblMAPrecio">Nal. C$20, Ext. C$1.</string>
+    <string name="lblMAServicios">Tours</string>
+    <string name="lblMAHorario">L-V 9:00 a.m. - 5:00 p.m. S-D con citas</string>
+    <string name="lblMATematica">Museo Arqueológico</string>
+    <string name="lblMAActividades">No hay información para esta área. </string>
+    <string name="lblMATelefono">(+505) 2311-8327</string>
+    <string name="lblMADireccion">Costado noroeste de la Igl. de Sutiava - León, León</string>
+
+    <!--Etiquetas para Museo Archivo Rubén Darío-->
+    <string name="lblMARDAnioFund">8 de febrero 1964</string>
+    <string name="lblMARDFundador">Edgardo Buitraga, Mairano Frallos Hill y Gustavo Sequeira Madriz</string>
+    <string name="lblMARDAdmin">N/H</string>
+    <string name="lblMARDPrecio">Ext. U$1 y Nal. Voluntario</string>
+    <string name="lblMARDServicios">Tours</string>
+    <string name="lblMARDHorario">M-S 8:00 a.m. - 12:00 a.m. y 2:00 p.m. - 5:00 p.m.</string>
+    <string name="lblMARDTematica">Casa Histórica</string>
+    <string name="lblMARDActividades">Act. Culturales y Literarias, presentación de libros, jornadas Darianas.</string>
+    <string name="lblMARDTelefono">(+505) 2311-8327</string>
+    <string name="lblMARDDireccion">Costado noroeste de la Igl. de Sutiava - León, León</string>
+
+    <!--Etiquetas para Museo Entomológico-->
+    <string name="lblMEAnioFund">1988</string>
+    <string name="lblMEFundador">Jean-Michel Maes</string>
+    <string name="lblMEAdmin">Jean-Michel Maes</string>
+    <string name="lblMEPrecio">Nal. y Ext. C$10 y Niños C$5</string>
+    <string name="lblMEServicios">Identificación de Insectos</string>
+    <string name="lblMEHorario">J - Martes 9:00 a.m. - 12:00 a.m. y 2:00 p.m. - 4:00 p.m.</string>
+    <string name="lblMETematica">Entomológico</string>
+    <string name="lblMEActividades">Estudio de la entomología en Nicaragua</string>
+    <string name="lblMETelefono">(+505) 2311 6586</string>
+    <string name="lblMEDireccion">Costado Sur Iglesia San Juan, 2 cuadras al sur.</string>
+
+    <!--Etiquetas para Museo Leyendas y Tradiciones-->
+    <string name="lblMLyLAnioFund">13 de marzo de 1993</string>
+    <string name="lblMLyLFundador">Carmen Toruño López</string>
+    <string name="lblMLyLAdmin">Alcaldía de León</string>
+    <string name="lblMLyLPrecio">Nal. C$20, Ext. C$50, Est. C$15 y Niños C$10</string>
+    <string name="lblMLyLServicios">Tours Informativos</string>
+    <string name="lblMLyLHorario">M-V 8:00 a.m. y S-D: 9:30 a.m. y 4:00 p.m.</string>
+    <string name="lblMLyLTematica">Escultura, Grabado, Proyecto Mural</string>
+    <string name="lblMLyLActividades">Tours</string>
+    <string name="lblMLyLTelefono">(+505) 2311 2886</string>
+    <string name="lblMLyLDireccion">Frente a las ruinas de la Igl. de San Sebastián</string>
+
+    <!--Etiquetas para Museo Genízaro-->
+    <string name="lblMGAnioFund">2003</string>
+    <string name="lblMGFundador">Silvio Mayorga</string>
+    <string name="lblMGAdmin">Alc. de Nagarote Ing. Juan Gabriel Hernández Roja y Lic. Nelly Rueda</string>
+    <string name="lblMGPrecio">Gratis</string>
+    <string name="lblMGServicios">Tours</string>
+    <string name="lblMGHorario">L-D: 7:30 a.m. - 12:00 a.m. y 1:30 p.m. - 5:00 p.m.</string>
+    <string name="lblMGTematica">Inmueble Histórico</string>
+    <string name="lblMGActividades">Tours</string>
+    <string name="lblMGTelefono">N/H</string>
+    <string name="lblMGDireccion">Parque central 1 cuadra al oeste. Nagarote, León.</string>
+
+    <!--Etiquetas para Museo Histórico Héroes y Mártires de Veracruz-->
+    <string name="lblMHHyMAnioFund">1981 y 1993 ampliación del museo</string>
+    <string name="lblMHHyMFundador">Dionisio Meza</string>
+    <string name="lblMHHyMAdmin">Dionisio Meza</string>
+    <string name="lblMHHyMPrecio">Ext. C$ 100 y Nal. C$50</string>
+    <string name="lblMHHyMServicios">Tours</string>
+    <string name="lblMHHyMHorario">L-D 8:30 a.m. - 5:00 p.m.</string>
+    <string name="lblMHHyMTematica"></string>
+    <string name="lblMHHyMActividades">Fistas, Fin de año.</string>
+    <string name="lblMHHyMTelefono">(+505) 84004344</string>
+    <string name="lblMHHyMDireccion">Costado oeste de la Catedral de León</string>
+
+    <!--Etiquetas para Centro de Artes-->
+    <string name="lblMCAAnioFund">2000</string>
+    <string name="lblMCAFundador">Familia Ortíz Gurdián</string>
+    <string name="lblMCAAdmin">Patricia Gurdián de Ortíz</string>
+    <string name="lblMCAPrecio">Ext. U$2, Nic. </string>
+    <string name="lblMCAServicios">Tours</string>
+    <string name="lblMCAHorario">M-V 9:00 am - 5:00 pm y 9:00 am - 4:00 pm</string>
+    <string name="lblMCATematica">Arte Occidental, Exhibiciones de arte</string>
+    <string name="lblMCAActividades">Tours, </string>
+    <string name="lblMCATelefono">(+505) 23110718</string>
+    <string name="lblMCADireccion">Esquina opuesta Igl. San Francisco, León, Nicaragua.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 </resources>
